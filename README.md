@@ -17,4 +17,4 @@ This is a simple Card UI design built using HTML and CSS, showcasing clean and r
 ## Screenshots
 
 _Add screenshots of your Card UI design here (optional)._
-![Screenshot of Card UI](./assets/screenshot.png)
+![Screenshot of Card UI](./assets/Screenshot 2024-10-12 004925.png)
