@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            *{
+                margin: 0;
+                     padding: 0;
+                     box-sizing: border-box;
+            }
+            .container{
+
+                     height: 100vh;
+                     width: 100vw;
+                     background-color: #52ACFF;
+                     background-image: linear-gradient(180deg, #52ACFF 25%, #FFE32C 100%);
+                    
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+                     flex-wrap: wrap;
+                     
+                     
+                 }
+                 .box{
+                    height: 420px;
+                    width: 270px;
+                    background-color: aliceblue;
+                    border-radius: 15px;
+                    display:flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    /* position: relative; */
+                 }
+                 .image{
+                    height: 150px;   /*550*260px */
+                    width: 270px;
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                 }
+
+
+                 .texthai{
+                   /* padding-left: 5px;  
+                     display: flex;
+                     flex-direction: column;
+                    /* justify-content: center; */
+                    padding-left: 5px;
+                    align-items: center;
+                    width: 90%;
+                    text-align: center;
+                 }
+
+
+                 #paymentButton{
+                    height: 9%;
+                    width: 80%;
+                    background-color: rgb(7, 7, 46);
+                     color: aliceblue;
+                     border-radius: 5px;
+                    margin-left: 20px;
+                    margin-top: 8px;
+                    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+                 }
+               .cancel a{
+                       text-decoration: none; 
+                       color: black;
+                       font-weight: bold;
+                        
+                 }
+                .cancel{
+                    text-align: center;
+                }
+   
+                .leftbox{
+                       height: 100%;
+                       /* width: 50%; */
+                       /* background-color: #FFE32C; */
+                       display: flex;
+                       /* flex-direction: row;
+                       align-items: center; */
+                       gap: 15px;
+                     }   
+                       
+
+
+            #plan{
+                    display: flex;
+                    flex-direction: row;
+                    height: 10%;
+                    width: 80%;
+                    background-color: rgb(143, 213, 189);
+                    border-radius: 5px;
+                     margin-left: 20px;  
+                     margin-top: 5px;
+                    justify-content: space-between;  
+                    align-items: center;
+                    
+                 }
+                .rightbox{
+                       height: flex;     /*important point  both are height and width*/
+                        width: fit-content;
+                        padding-right: 20px;
+                        padding-left: 20px;
+
+                }
+
+                .txtbox{
+                    height:90%;
+                    width: 50%;
+                     /* display: flex;
+                     flex-direction: row;    */
+                    /* text-align: center; */
+                    position: relative;
+                    top: 0px;
+                      
+                    
+                }
+                
+                #plan img{
+                     height: 44px;
+                     width: 50px;
+                 }
+                 @media (max-width: 500px) {
+                            .container {
+                                flex-direction: column;
+                            }
+
+                            .box {
+                                width: 95%; /* Adjust the width for smaller screens */
+                                flex-direction: column;
+                            }
+
+                            #plan {
+                                width: 90%;
+                                flex-direction: column;
+                            }
+
+                            .leftbox,
+                            .rightbox {
+                                width: 100%;
+                                text-align: center;
+                                margin-left: 0;
+                                
+                            }
+
+                            .txtbox {
+                                width: 100%;
+                                padding: 0; /* Remove padding for smaller screens */
+                            }
+                            #plan img{
+                                    height: 90%;
+                                    width: 90%;
+                                }
+                                .image{
+                                    height: 90%;
+                                    width: 90%;
+                                }
+                        }
+
+ 
+    </style>
+
+</head>
+<body>
+    <div class="container">
+            <div class="box">
+                  <img src="assets/image.jpg"class="image"/>
+                  
+                  <div class="texthai">
+                            <h2>Order summary</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                 enim dolores veritatis voluptatem</p>
+                        
+                  </div>
+               
+                     <div id="plan">
+                            <div class="leftbox">
+                                        <div class="imgbox"> 
+                                            <img src="assets/images.png">
+                                        </div>
+
+                                         <div class="txtbox"> 
+                                                <p>Amount <br>$99.9Year</p>
+                                                <!-- <p>$99.9Year</p> -->
+                                        </div>
+                            </div>
+                            <div class="rightbox"> 
+                                <a href="#"  >change</a>
+                            </div>
+                             
+                     </div>
+                     
+                     <button id="paymentButton"> proceed payment</button>
+                    <div class="cancel">
+                           <a href="#" >Cancel order</a>
+                    </div>
+            </div>
+    </div>
+</body>
+</html>
